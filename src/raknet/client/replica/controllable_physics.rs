@@ -34,14 +34,14 @@ pub struct CheatInfo {
 }
 
 #[derive(Debug, PartialEq, ReplicaSerde)]
-pub struct Unknown1 {
+pub struct EquippedItemStates {
 	pub loot_pickup_radius: f32,
-	pub unknown_2: bool,
+	pub is_flying: bool,
 }
 
 #[derive(Debug, PartialEq, ReplicaSerde)]
 pub struct Unknown2 {
-	pub unknown_1: Option<Unknown1>,
+	pub unknown_1: Option<EquippedItemStates>,
 }
 
 #[derive(Debug, PartialEq, ReplicaSerde)]
@@ -67,7 +67,7 @@ pub struct ControllablePhysicsConstruction {
 	pub jetpack_info: Option<JetpackInfo>,
 	pub stun_immunity_info: Option<StunImmunityInfo>,
 	pub cheat_info: Option<CheatInfo>,
-	pub unknown_1: Option<Unknown1>,
+	pub equipped_item_states: Option<EquippedItemStates>,
 	pub unknown_2: Option<Unknown2>,
 	pub frame_stats: Option<FrameStats>,
 }
@@ -81,7 +81,7 @@ pub struct FrameStatsTeleportInfo {
 #[derive(BitVariantTests, Debug, PartialEq, ReplicaSerde)]
 pub struct ControllablePhysicsSerialization {
 	pub cheat_info: Option<CheatInfo>,
-	pub unknown_1: Option<Unknown1>,
+	pub equipped_item_states: Option<EquippedItemStates>,
 	pub unknown_2: Option<Unknown2>,
 	pub frame_stats_teleport_info: Option<FrameStatsTeleportInfo>,
 }
