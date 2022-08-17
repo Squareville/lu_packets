@@ -3,14 +3,14 @@ ControllablePhysicsSerialization {
 		gravity_scale: 8.0,
 		run_multiplier: 9.0,
 	}),
-	unknown_1: Some(Unknown1 {
+	equipped_item_states: Some(EquippedItemStates {
 		loot_pickup_radius: 10.0,
-		unknown_2: true,
+		is_flying: true,
 	}),
 	unknown_2: Some(Unknown2 {
-		unknown_1: Some(Unknown1 {
+		equipped_item_states: Some(EquippedItemStates {
 			loot_pickup_radius: 11.0,
-			unknown_2: true,
+			is_flying: true,
 	}),
 	}),
 	frame_stats_teleport_info: Some(FrameStatsTeleportInfo {
