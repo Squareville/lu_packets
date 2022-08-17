@@ -9,7 +9,7 @@ ControllablePhysicsSerialization {
 	}),
 	bubble_info: Some(BubbleInfo {
 		bubble: Some(Bubble {
-			state: 11.0,
+			state: 1093664768,
 			is_in_bubble: true,
 		}),
 	}),
