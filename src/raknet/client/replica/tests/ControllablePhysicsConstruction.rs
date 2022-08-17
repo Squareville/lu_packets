@@ -17,15 +17,15 @@ ControllablePhysicsConstruction {
 		gravity_scale: 8.0,
 		run_multiplier: 9.0,
 	}),
-	equipped_item_states: Some(EquippedItemStates {
+	equipped_item_info: Some(EquippedItemInfo {
 		loot_pickup_radius: 10.0,
 		is_flying: true,
 	}),
-	unknown_2: Some(Unknown2 {
-		equipped_item_states: Some(EquippedItemStates {
-			loot_pickup_radius: 11.0,
-			is_flying: true,
-	}),
+	bubble_info: Some(BubbleInfo {
+		bubble: Some(Bubble {
+			state: 11.0,
+			is_in_bubble: true,
+		}),
 	}),
 	frame_stats: Some(FrameStats {
 		position: Vector3 {
