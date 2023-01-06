@@ -40,14 +40,14 @@ pub struct EquippedItemInfo {
 }
 
 #[derive(Debug, PartialEq, ReplicaSerde)]
-pub struct Bubble {
+pub struct HasBubble {
 	pub state: u32,
-	pub is_in_bubble: bool,
+	pub use_special_animation: bool,
 }
 
 #[derive(Debug, PartialEq, ReplicaSerde)]
 pub struct BubbleInfo {
-	pub bubble: Option<Bubble>,
+	pub bubble: Option<HasBubble>,
 }
 
 #[derive(Debug, PartialEq, ReplicaSerde)]
